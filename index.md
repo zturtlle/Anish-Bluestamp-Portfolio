@@ -1,4 +1,4 @@
-# Raspberry Pi OCR, Translator, and Speaker
+# Raspberry Pi with OCR, Translator, and Speaker Capabilities
 Have you ever seen a sign or writing in a foreign language and wanted to know what it meant, but couldn’t read in that language or even know which language it was in? Well with the Optical Character Recognition Raspberry Pi with auto translate to English capabilities and a speaker, worry no more! By doing this project, I have realized what it takes to build an engineering project that is challenging and what it is like to modify it. I also learned what coding is about and how it can be used with hardware in the sense that there can be a little hardware and a lot of software but it is equally important to pay attention to both.
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -11,13 +11,11 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Anish R. | Lynbrook High School | Electrical Engineering | Incoming Sophomore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+
 
 ![Headstone_image](Photowithproject.jpg)
   
 # Final Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O1HltjNzGrk?si=nWeoPSFlpCm-tkmX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -33,15 +31,11 @@ For my third milestone I added translation from any language into English (namel
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FnQXYTGDo4?si=ZXumB9RFzwgtLY6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my second milestone I added English to Spanish translation to my live text recognition base project and also got my Raspberry Pi camera to livestream footage and recognize text live. I used the same hardware as before (Raspberry Pi 4B and pi camera), but through code I was able to turn on and save pictures of the moments when it was able to read text. The issue with just having this was that sometimes it was hard to position and focus the camera on the text(Set to 1080x1920). I first tried to input some code that my instructor had that could livestream the camera’s character recognition, so it would show if it was recognizing text. However, this code didn’t work, so to fix this I adjusted the code, adding some new lines we thought would help and getting rid of other lines we thought weren’t helping. Eventually I downgraded my OCR library for recognizing text which was a large part of the issues and, after some more changes in the code, got the livestream to work(Set to 720x480). After finishing the base project I then implemented live text translation. I initially referred to this tutorial(https://pyimagesearch.com/2021/09/20/language-translation-and-ocr-with-tesseract-and-python/), but I eventually found out that some of its code was outdated so I ultimately followed this tutorial(https://medium.com/analytics-vidhya/how-to-translate-text-with-python-9d203139dcf5) to finish the translation aspect of this project. I have been surprised by how often bugs in code pop up and how hard it can be to identify why errors arise. On the flip side, I have been pleasantly surprised as to how many online resources there are to solve problems and how much creativity is needed to solve them as well. To finish up this project, I plan to use a speaker to audibly project the translated words. Given enough time, I would also like to implement an interface to provide the user with the ability to choose what languages to translate to and from and/or also provide the user with instructions as to what to do when they see the words.
 
 # First Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qUUw8sn6Nfc?si=T7KP0kq-mFZG-iRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -51,7 +45,7 @@ For my first milestone I focused on taking pictures and videos using a Raspberry
 ![Schematics](Schematics.JPG)
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```python
 import cv2
@@ -155,9 +149,7 @@ while True:
 cv2.destroyAllWindows()
 ```
 
-# Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+# Bill of Materials 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -167,8 +159,11 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [OCR Tutorial]([(https://tutorials-raspberrypi.com/raspberry-pi-text-recognition-ocr/])
+- [How to add text recognition for more languages]([https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04/798492#798492])
+- [List of Translator]([(https://lokalise.com/blog/how-to-translate-languages-in-python-with-google-translate-and-deepl-plus-more/#Python_translation_libraries])
+- [How to use espeak library for speaker]([https://forums.raspberrypi.com/viewtopic.php?t=280403])
+- [NLTK worlist to check if words are real English words(For "Gibberish Filter")]([https://www.nltk.org/])
+- [ChatGPT Conversation with Information at the end on how to use the Spacy library to check if a word is a proper noun(Other part of "Gibberish Filter")]([https://chatgpt.com/share/6cc9acb7-ccfc-4a12-9d17-6dda4993a882])
 
 To watch the BSE tutorial on how to create a portfolio, click here.
