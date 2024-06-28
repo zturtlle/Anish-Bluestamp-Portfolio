@@ -47,17 +47,106 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+```import cv2
+import pytesseract
+import spacy
+import string
+#from wamerican import american_english
+#from PyDictionary import PyDictionary
+import nltk
+from nltk.corpus import words
+#from english_words import english_words_alpha_set
+#from english_words import english_words_set
+from pytesseract import Output
+from picamera2 import MappedArray, Picamera2, Preview
+from deep_translator import GoogleTranslator
+from espeak import espeak
+from time import sleep
 
-void loop() {
-  // put your main code here, to run repeatedly:
+nltk.download('words')
+word_list = set(words.words())
+#espeak.set_voice('en-scottish')
+def remove_punctuation(test_str):
+# Using filter() and lambda function to filter out punctuation characters
+  result = ''.join(filter(lambda x: x.isalpha() or x.isdigit() or x.isspace(), test_str))
+  return result
+print("OpenCV version:", cv2.__version__) 
+#cap = cv2.VideoCapture(0)
+#cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+picam2 = Picamera2()
+picam2.configure(picam2.create_preview_configuration({"size":(720, 480)}))
+picam2.start_preview(Preview.QTGL)
+picam2.start()
 
-}
+i = 0 
+
+
+while True:
+    # Capture frame-by-frame
+    #ret, frame = cap.read()
+    frame=picam2.capture_array()
+ 
+    d = pytesseract.image_to_data(frame, output_type=Output.DICT)
+    n_boxes = len(d['text'])
+    print(n_boxes)
+    for i in range(n_boxes):
+        if int(d['conf'][i]) > 60:
+            (text, x, y, w, h) = (d['text'][i], d['left'][i], d['top'][i], d['width'][i], d['height'][i])
+            # don't show empty text
+            if text and text.strip() != "":
+                frame = cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)               
+                frame = cv2.putText(frame, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
+                cv2.imwrite(str(i)+".png", frame)
+                i += 0
+                to_translate = text
+                translated = GoogleTranslator(source='auto', target='en').translate(to_translate)
+                apart = translated.split()
+                if translated is not None: 
+                    apart = translated.split() 
+                    for word in apart:
+                        #print(translated2)
+                        translated2 = remove_punctuation(word)
+                        low = translated2.lower()
+                        nlp = spacy.load('en_core_web_sm')
+                        doc = nlp(translated2)
+                        entities = {ent.text for ent in doc.ents}
+                        #print(type(translated))
+                        #def check(word, list):
+                        if low in set(words.words()) or translated2 in entities:
+                        #if translated2 in english_words_alpha_set or  english_words_set:
+                        #if translated in english_words_alpha_set or english_words_set:
+                            print(translated)
+                            espeak.set_voice('en-scottish')
+                            print('Using voice:', 'en-scottish')
+                            #espeak.set_voice('en-scottish')
+                            espeak.synth(translated)
+                            while espeak.is_playing():
+                            #espeak is asynchronous, so wait politely until it's finished
+                                sleep(0.25)
+                        if translated is not None and "!" in translated:
+                            print("Please pay attention to what the words are saying")
+                            espeak.set_voice('en-scottish')
+                            print('Using voice:', 'en-scottish')
+                            #espeak.set_voice('en-scottish')
+                            #print("Please pay attention to what the words are saying")
+                            espeak.synth("Please pay attention to what the words are saying")
+                            while espeak.is_playing():
+                                sleep(0.25)
+                        if translated is not None and "?" in translated:
+                            print("The text is asking a question")
+                            espeak.set_voice('en-scottish')
+                            print('Using voice:', 'en-scottish')
+                            espeak.synth("The text is asking a question")
+                            while espeak.is_playing():
+                                sleep(0.25) 
+                     #Display the resulting frame
+    cv2.imshow('frame', frame)
+    
+ 
+# When everything done, resleep(0.25)lease the capture
+# cap.release()
+cv2.destroyAllWindows()
+ 
 ```
 
 # Bill of Materials
