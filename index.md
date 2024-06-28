@@ -48,7 +48,7 @@ For my second milestone I added English to Spanish translation to my live text r
 For my first milestone I focused on taking pictures and videos using a Raspberry Pi 4 Model B and corresponding Pi camera. Using PuTTY, I remotely connected and sent commands to the Raspberry Pi, telling it when to take the pictures and videos. Since I am following a tutorial, I struggled at times with understanding some aspects of code which made it hard to debug errors. In the coming days I want to better walk through and analyze the code, as this will not only allow me to understand and debug it better, but will also allow me to later add my own modifications. For the next stage of my project I will finish the tutorial and implement live text recognition to my project.
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+![Schematics](Schematics.JPG)
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
