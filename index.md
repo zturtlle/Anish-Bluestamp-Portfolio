@@ -48,12 +48,8 @@ import cv2
 import pytesseract
 import spacy
 import string
-#from wamerican import american_english
-#from PyDictionary import PyDictionary
 import nltk
 from nltk.corpus import words
-#from english_words import english_words_alpha_set
-#from english_words import english_words_set
 from pytesseract import Output
 from picamera2 import MappedArray, Picamera2, Preview
 from deep_translator import GoogleTranslator
@@ -62,14 +58,11 @@ from time import sleep
 
 nltk.download('words')
 word_list = set(words.words())
-#espeak.set_voice('en-scottish')
 def remove_punctuation(test_str):
 # Using filter() and lambda function to filter out punctuation characters
   result = ''.join(filter(lambda x: x.isalpha() or x.isdigit() or x.isspace(), test_str))
   return result
 print("OpenCV version:", cv2.__version__) 
-#cap = cv2.VideoCapture(0)
-#cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 picam2 = Picamera2()
 picam2.configure(picam2.create_preview_configuration({"size":(720, 480)}))
 picam2.start_preview(Preview.QTGL)
@@ -80,7 +73,6 @@ i = 0
 
 while True:
     # Capture frame-by-frame
-    #ret, frame = cap.read()
     frame=picam2.capture_array()
  
     d = pytesseract.image_to_data(frame, output_type=Output.DICT)
@@ -101,21 +93,15 @@ while True:
                 if translated is not None: 
                     apart = translated.split() 
                     for word in apart:
-                        #print(translated2)
                         translated2 = remove_punctuation(word)
                         low = translated2.lower()
                         nlp = spacy.load('en_core_web_sm')
                         doc = nlp(translated2)
                         entities = {ent.text for ent in doc.ents}
-                        #print(type(translated))
-                        #def check(word, list):
                         if low in set(words.words()) or translated2 in entities:
-                        #if translated2 in english_words_alpha_set or  english_words_set:
-                        #if translated in english_words_alpha_set or english_words_set:
                             print(translated)
                             espeak.set_voice('en-scottish')
                             print('Using voice:', 'en-scottish')
-                            #espeak.set_voice('en-scottish')
                             espeak.synth(translated)
                             while espeak.is_playing():
                             #espeak is asynchronous, so wait politely until it's finished
@@ -124,8 +110,6 @@ while True:
                             print("Please pay attention to what the words are saying")
                             espeak.set_voice('en-scottish')
                             print('Using voice:', 'en-scottish')
-                            #espeak.set_voice('en-scottish')
-                            #print("Please pay attention to what the words are saying")
                             espeak.synth("Please pay attention to what the words are saying")
                             while espeak.is_playing():
                                 sleep(0.25)
@@ -140,8 +124,6 @@ while True:
     cv2.imshow('frame', frame)
     
  
-# When everything done, resleep(0.25)lease the capture
-# cap.release()
 cv2.destroyAllWindows()
 ```
 
