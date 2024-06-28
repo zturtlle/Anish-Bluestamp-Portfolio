@@ -47,7 +47,8 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```import cv2
+```python
+import cv2
 import pytesseract
 import spacy
 import string
@@ -146,7 +147,6 @@ while True:
 # When everything done, resleep(0.25)lease the capture
 # cap.release()
 cv2.destroyAllWindows()
- 
 ```
 
 # Bill of Materials
