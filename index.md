@@ -1,11 +1,7 @@
 # Raspberry Pi with OCR, Translator, and Speaker Capabilities
 Have you ever seen a sign or writing in a foreign language and wanted to know what it meant, but couldn’t read in that language or even know which language it was in? Well with the Optical Character Recognition Raspberry Pi with auto translate to English capabilities and a speaker, worry no more! By doing this project, I have realized what it takes to build an engineering project that is challenging and what it is like to modify it. I also learned what coding is about and how it can be used with hardware in the sense that there can be a little hardware and a lot of software but it is equally important to pay attention to both.
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
+
 
 | **Engineer**  | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -161,9 +157,8 @@ cv2.destroyAllWindows()
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [OCR Tutorial](https://tutorials-raspberrypi.com/raspberry-pi-text-recognition-ocr/)
 - [How to add text recognition for more languages](https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04/798492#798492)
-- [List of Translator]([(https://lokalise.com/blog/how-to-translate-languages-in-python-with-google-translate-and-deepl-plus-more/#Python_translation_libraries])
-- [How to use espeak library for speaker]([https://forums.raspberrypi.com/viewtopic.php?t=280403])
-- [NLTK worlist to check if words are real English words(For "Gibberish Filter")]([https://www.nltk.org/])
-- [ChatGPT Conversation with Information at the end on how to use the Spacy library to check if a word is a proper noun(Other part of "Gibberish Filter")]([https://chatgpt.com/share/6cc9acb7-ccfc-4a12-9d17-6dda4993a882])
+- [List of Translator](https://lokalise.com/blog/how-to-translate-languages-in-python-with-google-translate-and-deepl-plus-more/#Python_translation_libraries)
+- [How to use espeak library for speaker](https://forums.raspberrypi.com/viewtopic.php?t=280403)
+- [NLTK worlist to check if words are real English words(For "Gibberish Filter")](https://www.nltk.org/)
+- [ChatGPT Conversation with Information at the end on how to use the Spacy library to check if a word is a proper noun(Other part of "Gibberish Filter")](https://chatgpt.com/share/6cc9acb7-ccfc-4a12-9d17-6dda4993a882)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
