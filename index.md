@@ -1,4 +1,5 @@
 # Raspberry Pi with OCR, Translator, and Speaker Capabilities
+[![RPiOCR](Photowithproject.jpg)](./RPiOCR.html)
 Have you ever seen a sign or writing in a foreign language and wanted to know what it meant, but couldn’t read in that language or even know which language it was in? Well with the Optical Character Recognition Raspberry Pi with auto translate to English capabilities and a speaker, worry no more! By doing this project, I have realized what it takes to build an engineering project that is challenging and what it is like to modify it. I also learned what coding is about and how it can be used with hardware in the sense that there can be a little hardware and a lot of software but it is equally important to pay attention to both.
 
 
