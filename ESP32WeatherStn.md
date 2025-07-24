@@ -33,13 +33,10 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ioF2Q5K0R9g?si=t-uc9BIFGQG2-f9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+For my second milestone, I was able to add a gas sensor to my project which I coded to pick up CO2 readings(in PPM) from its environment. I was also able to get this CO2 data displayed on a site called ThingSpeak. What this modification allows me to do is to collect live data locally and store and visualize it somewhere. I have been surprised by how integrating code from different tutorials to make different parts of the project work(e.g. the sensor, uploading data to ThingSpeak, getting data from OpenWeatherMap) produces bugs which are oftentimes simple to solve. I have also been surprised as to how certain, simple parts of the project and the way parts of it fundamentally work, like making a variable the correct datatype, and not understanding the way the esp32 worked led to major bugs and issues with my project. While completing this milestone, I ran into some issues such as when trying to integrate code to upload data to ThingSpeak with the code I had so far. I was using temperature data from OpenWeatherMap as a placeholder for CO2 data since I had not received the sensor at the start of the week but had  started trying to upload code to ThingSpeak on the first day of the week. I had a hard time uploading the temperature data and eventually found out it was due to its datatype and eventually was able to properly convert the temperature values to a proper data type. I also had issues with the gas sensor only giving readings of 0. After experimenting with the code I had and attempting to debug, my instructor and I realized that the sensor, which gave values in analog, was connected to a pin using the same Analog-Digital converter on the esp32 as the WiFi, allowing us to solve the problem. For my final milestone, I want to fine tune my code to refine the project, make CO2 readings more accurate with a library for the sensor, and complete another milestone, perhaps doing something with the live data from the gas sensor.
+
 
 # First Milestone
 
