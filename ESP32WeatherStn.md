@@ -67,8 +67,8 @@ Here's where you'll put your code. The syntax below places it into a block of co
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 
-const char* ssid = "homelan2";
-const char* password = "20052009";
+const char* ssid = "SSID";
+const char* password = "Password";
 
 WiFiClient  client1;
 
@@ -76,7 +76,7 @@ long myChannelNumber = 3009505;
 const char * myWriteAPIKey = "3R9KYPU795ZY35CO";
 
 // Your Domain name with URL path or IP address with path
-String openWeatherMapApiKey = "b8bf869b7e68f6dfa92594c52a86f5da";
+String openWeatherMapApiKey = "APIKey";
 // Example:
 //String openWeatherMapApiKey = "bd939aa3d23ff33d3c8f5dd1dd435";
 
