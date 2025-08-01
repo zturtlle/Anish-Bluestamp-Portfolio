@@ -275,7 +275,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| MQ-135 Sensor | Gas Sensor for CO2 Level Measurement | $7.99 | <a href="https://www.amazon.com/MQ135-Quality-Sensor-Module-Arduino/dp/B0F4D54VQ4/ref=mp_s_a_1_4?crid=27F00CBIXUTGA&dib=eyJ2IjoiMSJ9.5FNF91eoVCdydQVHt9BJqC7AUszQdtjXcMPR0QfscLN-dSIZYV6uKhi3C_iwo00a7a60N_VIZR5CY7aiivqGsbclbnwjJBWB4f6KY286mnEfCoiZIm6XB16rtbU14YihEl0EWQydtsnhVj0VHmi7MNRk1AZJ4xzG_htyqJynZkGxWFaduqaxuDXjkOGLbtnkvlefi9mPsXjhDTIFA6XtGg.ExaYd1bHQmULQWSyGMb6v_mfSCBn089d2awdvo6A0Fg&dib_tag=se&keywords=mq135+sensor&qid=1752345690&sprefix=mq135%2Caps%2C151&sr=8-4"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
