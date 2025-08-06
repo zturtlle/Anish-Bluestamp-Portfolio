@@ -276,6 +276,11 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | MQ-135 Sensor | Gas Sensor for CO2 Level Measurement | $7.99 | <a href="https://www.amazon.com/MQ135-Quality-Sensor-Module-Arduino/dp/B0F4D54VQ4/ref=mp_s_a_1_4?crid=27F00CBIXUTGA&dib=eyJ2IjoiMSJ9.5FNF91eoVCdydQVHt9BJqC7AUszQdtjXcMPR0QfscLN-dSIZYV6uKhi3C_iwo00a7a60N_VIZR5CY7aiivqGsbclbnwjJBWB4f6KY286mnEfCoiZIm6XB16rtbU14YihEl0EWQydtsnhVj0VHmi7MNRk1AZJ4xzG_htyqJynZkGxWFaduqaxuDXjkOGLbtnkvlefi9mPsXjhDTIFA6XtGg.ExaYd1bHQmULQWSyGMb6v_mfSCBn089d2awdvo6A0Fg&dib_tag=se&keywords=mq135+sensor&qid=1752345690&sprefix=mq135%2Caps%2C151&sr=8-4"> Link </a> |
+| ESP32 | Microcontroller used for the Project | $15.19 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/HiLetgo-ESP32-DevKitC-ESP32-WROOM-32U-ESP-WROOM-32U-Development/dp/B09KLS2YB3/ref=sr_1_2_sspa?crid=RZS0VO0FHLVG&dib=eyJ2IjoiMSJ9.UdLxS8engRob9RiEzo8GfUX_eb5SIivviByIHACD0jgBzVFD5MSKwRvt2HMUQ7jFwjmW8ZG0IeuXxh15af8FtOTBMtuZxzmPoijgCAnKnMBABOHZyD0edn4YZkFJbrA5RfjALOAtDYMc95a05cKxR9wKnwQd1YByAgxWGkl5UDc3XCV-nKV2pEM5FC9Wd_ZQUxuXoQkWv5tMsbM1aizGqFFphD4vJO6XYRx27X9L_yI.c3APPMEBNkLendl2C4CcAdNRThGAmdE_-whahkygZ4U&dib_tag=se&keywords=esp32&qid=1750359632&sprefix=esp32%2Caps%2C99&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)"> Link </a> |
+| Micro USB Cable | Cable to connect ESP32 with a computer | $5.49 | <a href="https://www.amazon.com/dp/B098DW7485?ref=nb_sb_ss_w_as-reorder_k0_1_8&amp=&crid=1YRBOW66YBW2H&sprefix=microusb&th=1"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
