@@ -48,7 +48,8 @@ My first milestone was completing my base project which was getting weather data
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```#include <WiFi.h>
+```cpp
+#include <WiFi.h>
 #include <HTTPClient.h>
 #include <Arduino_JSON.h>
 #include <ThingSpeak.h>
