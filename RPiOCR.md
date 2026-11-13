@@ -138,7 +138,7 @@ cv2.destroyAllWindows()
 | Arducam  | Where the Raspberry Pi sees everything from | $12.99 | <a href="https://www.amazon.com/gp/product/B07RWCGX5K/"> Link </a> |
 | NSP-100 Mini External Speaker | Says the translated words out loud | $15.49 | <a href="https://www.amazon.com/Sanpyl-External-Speaker-NSP-100-Microphone/dp/B0816F2R56"> Link </a> |
 
-# Other Resources Used
+# Resources Used
 
 - [OCR Tutorial](https://tutorials-raspberrypi.com/raspberry-pi-text-recognition-ocr/)
 - [How to add text recognition for more languages](https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04/798492#798492)
