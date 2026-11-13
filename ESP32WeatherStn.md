@@ -1,3 +1,6 @@
+---
+description: Anish's Summer ESP-32 Project
+---
 # ESP32 Weather Station and CO2 Monitor
 The ESP32 Weather Station and CO2 monitor provides for an easy way to check the weather for your city and the air quality in your home at any time of day. With a display module which displays all of this information and an LED which signals air quality, this project is able to provide accurate weather data from a site called OpenWeatherMap and is able to display accurate CO2 data with an MQ-135 sensor and some mathematical work! This project taught me a lot about IoT systems, math in coding, and certain electricals systems.
 
