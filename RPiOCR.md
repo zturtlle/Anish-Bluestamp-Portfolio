@@ -44,7 +44,6 @@ For my first milestone I focused on taking pictures and videos using a Raspberry
 ![Schematics](Schematics.JPG)
 
 # Code
-The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```python
 import cv2
