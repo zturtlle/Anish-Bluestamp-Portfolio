@@ -9,7 +9,7 @@ The ESP32 Weather Station and CO2 monitor provides for an easy way to check the 
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Schematics Image](Schematics.JPG)
+![Schematics Image](MeandWeatherStn.JPG)
   
 # Final Milestone
 
@@ -33,7 +33,7 @@ For my second milestone, I was able to add a gas sensor to my project which I co
 My first milestone was completing my base project which was getting weather data for some city(Lancaster, in my case) through OpenWeatherMap with the esp32 and displaying it on a display module. I wired the esp32 to the display through a breadboard, connecting the display to the esp32’s ground pin and power pin as well as to data pins 21 and 22. This enabled the display to receive power and display things with code through the esp32. I also followed two separate tutorials, one that showed me how to get weather data from OpenWeatherMap and another that showed me how to display things to the display module. After this, I worked to combine the two different codes from the tutorials and now have the display module showing live temperature, pressure, humidity, and wind speed data for Lancaster, US. One challenge I faced was getting data from OpenWeatherMap, as doing so through the code requires an API key, something I was not familiar with. Due to this, I was confused when trying to fetch OpenWeatherMap data but eventually was able to do it. Additionally, when trying to combine the code for the display module and OpenWeatherMap data, I did not fully understand all parts of both codes and how something actually gets displayed to the display. I worked with my instructor to understand how to combine the code without my errors and he also explained the concept of a buffer, which gets built up with each command to display something but must be pushed onto the display with a display.display() command. Another big issue I faced was too much data being displayed on the display, which is less than a square inch large. I tried implementing scrolling to display all the text cleanly, which was not successful, and instead listed out only the important information, as not all information initially displayed was relevant for a user, line by line. My next steps are to do a modification, likely either with a new piece of hardware which could collect local data to be displayed, or by harnessing the esp32’s WiFi capabilities.
 
 # Schematics 
-![Schematics Image](Schematics.JPG)
+![Schematics Image](BlueStampWeatherStn.JPG)
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
