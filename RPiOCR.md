@@ -138,8 +138,8 @@ cv2.destroyAllWindows()
 | Arducam  | Where the Raspberry Pi sees everything from | $12.99 | <a href="https://www.amazon.com/gp/product/B07RWCGX5K/"> Link </a> |
 | NSP-100 Mini External Speaker | Says the translated words out loud | $15.49 | <a href="https://www.amazon.com/Sanpyl-External-Speaker-NSP-100-Microphone/dp/B0816F2R56"> Link </a> |
 
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
+# Other Resources Used
+
 - [OCR Tutorial](https://tutorials-raspberrypi.com/raspberry-pi-text-recognition-ocr/)
 - [How to add text recognition for more languages](https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04/798492#798492)
 - [List of Translator](https://lokalise.com/blog/how-to-translate-languages-in-python-with-google-translate-and-deepl-plus-more/#Python_translation_libraries)
